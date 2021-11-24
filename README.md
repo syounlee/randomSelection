@@ -1,5 +1,5 @@
 # Selection of Winners in a Raffle
-We select a specific number of winner in a raffle, where the likelihood of winning is different for each participant.
+We select a specific number of winners in a raffle, where the likelihood of winning is different for each participant.
 
 ## Selection Process
 For each round, i.e., for each time selecting one winner, we do the following:
@@ -8,5 +8,5 @@ For each round, i.e., for each time selecting one winner, we do the following:
 - Generate a random number between 0 and 1;
 - Find the index where the item in the array is biggest among the items less than or equal to the random number.
 
-## Random Number Generation
+## Random Number Generator
 We have used [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister).
