@@ -9,4 +9,4 @@ For each round, i.e., for each time selecting one winner, we do the following:
 - Find the index where the item in the array is biggest among the items less than or equal to the random number.
 
 ## Random Number Generation
-We have used Mersenne Twisterhttps://en.wikipedia.org/wiki/Mersenne_Twister)(https://en.wikipedia.org/wiki/Mersenne_Twister).
+We have used Mersenne Twister(https://en.wikipedia.org/wiki/Mersenne_Twister).
