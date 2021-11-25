@@ -10,3 +10,6 @@ For each round, i.e., for each time selecting one winner, we do the following:
 
 ## Random Number Generator
 We have used [Mersenne Twister](https://en.wikipedia.org/wiki/Mersenne_Twister).
+
+## Selection Function
+The 'weightedSelection' returns the array of winner with the inputs (seed, array of likelihoods of participants,number of winners).
