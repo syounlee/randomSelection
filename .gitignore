@@ -1,0 +1,6 @@
+/node_modules
+package-lock_.json
+package_.json
+.env
+fun.js
+cryptoRandom_.js

@@ -1,12 +1,12 @@
 // Selection of Raffle Winnders
-const weightedSelection = (seed, weights, numberOfWinners) => {
+const raffleWinners = (seed, pricePremium, brandToken, numberOfWinners) => {
 
   var MersenneTwister = require('./mersenne-twister');
 
   const m = new MersenneTwister(seed);
 
   const summation = (a, b) => a+b;
-  const cumulativeSum = (sum => value => sum += value)(0);
+  // const cumulativeSum = (sum => value => sum += value)(0);
 
   const adjustWeights = (weights) => {
     sumOfArray = weights.reduce(summation);
@@ -29,8 +29,9 @@ const weightedSelection = (seed, weights, numberOfWinners) => {
   }
 
 
-  if (Array.isArray(weights) & weights.length >= numberOfWinners) {
-    
+  if (Array.isArray(pricePremium) & Array.isArray(brandToken) & brandToken.length==pricePremium.length & brandToken.length >= numberOfWinners) {
+
+    weights = pricePremium.map((e,i) => e * brandToken[i]);
     adjusted_weights = adjustWeights(weights);
     
     // Define the indices of the array 'weights'
@@ -79,4 +80,4 @@ const weightedSelection = (seed, weights, numberOfWinners) => {
 
 };
 
-module.exports = weightedSelection;
+module.exports = raffleWinners;
