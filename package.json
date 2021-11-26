@@ -1,0 +1,26 @@
+{
+  "name": "randomselection",
+  "version": "0.5.0",
+  "description": "",
+  "main": "raffle.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syounlee/randomSelection.git"
+  },
+  "author": "Seung Y. Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syounlee/randomSelection/issues"
+  },
+  "homepage": "https://github.com/syounlee/randomSelection#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.1.0",
+    "web3": "^1.6.1"
+  }
+}

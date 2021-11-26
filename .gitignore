@@ -1,6 +1,8 @@
 /node_modules
 package-lock_.json
 package_.json
+raffle_.js
 .env
 fun.js
+cryptoRandom.js
 cryptoRandom_.js
